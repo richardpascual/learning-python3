@@ -1,6 +1,6 @@
 hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
 
-prices = [30, 25, 40, 20, 20, 35, 50, 35]
+prices = [30.0, 25.0, 40.0, 20.0, 20.0, 35.0, 50.0, 35.0]
 
 last_week = [2, 3, 5, 8, 4, 4, 6, 2]
 
@@ -16,13 +16,13 @@ print("Average Haircut Price: " + str(average_price))
 
 # Reduce prices by $5.00 each
 
-new_prices = [new_price - 5 for new_price in prices]
+new_prices = [new_price - 5.0 for new_price in prices]
 
 print(new_prices)
 
 # Calculate the revenue for last week.
 
-total_revenue = 0
+total_revenue = 0.0
 
 for i in range(len(hairstyles)):
   total_revenue += last_week[i] * prices[i]
@@ -35,7 +35,7 @@ print("Average Daiy Revenue: " + str(average_daily_revenue))
 
 # Get a list of hairstyles under $30.00
 
-cuts_under_30 = [hairstyles[i] for i in range(len(hairstyles)) if new_prices[i] < 30]
+cuts_under_30 = [hairstyles[i] for i in range(len(hairstyles)) if new_prices[i] < 30.00]
 
 print(cuts_under_30)
 
